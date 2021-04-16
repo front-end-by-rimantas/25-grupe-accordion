@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 300px;
+}
+.accordion > .item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
+.accordion > .item > .top {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 30px;
+  background-color: #eee;
+  cursor: pointer;
+}
+.accordion .top > .title {
+}
+.accordion .top > .icons {
+}
+.accordion .icons > .expand {
+}
+.accordion .icons > .collaps {
+  display: none;
+}
+.accordion .item.active .icons > .expand {
+  display: none;
+}
+.accordion .item.active .icons > .collaps {
+  display: inline-block;
+}
+.accordion > .item > .bottom {
+  display: none;
+  padding: 10px;
+  font-size: 20px;
+}
+.accordion > .item.active > .bottom {
+  display: inline-block;
+}
